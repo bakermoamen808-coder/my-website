@@ -1,735 +1,816 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="MOWEB - تصميم وتطوير مواقع ويب احترافية وسريعة ومتجاوبة">
-    <meta name="theme-color" content="#08080c">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>MOWEB | تصميم مواقع احترافية</title>
+    <meta name="description"
+          content="MOWEB - تصميم وتطوير مواقع إلكترونية احترافية">
 
-    <!-- Google Fonts -->
+    <title>MOWEB — Digital Experiences</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-    <header class="navbar">
+<!-- ================= HEADER ================= -->
 
-        <div class="container nav-content">
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="#home" class="logo">
+            MO<span>WEB</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">الرئيسية</a>
+            <a href="#services">الخدمات</a>
+            <a href="#work">أعمالنا</a>
+            <a href="#about">من نحن</a>
+            <a href="#contact">تواصل</a>
+
+        </nav>
+
+        <a
+            class="header-button"
+            href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20الاستفسار%20عن%20خدماتكم"
+            target="_blank">
+
+            تحدث معنا
+            <span>↗</span>
+
+        </a>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="القائمة">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+
+                <span class="eyebrow-line"></span>
+
+                DIGITAL STUDIO
+
+            </div>
+
+            <h1>
+
+                نصنع مواقع
+                <br>
+
+                <em>تترك أثراً.</em>
+
+            </h1>
+
+            <p class="hero-description">
+
+                نحول الأفكار إلى تجارب رقمية
+                بسيطة، قوية ومميزة تساعد
+                علامتك التجارية على النمو.
+
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20بدء%20مشروعي"
+                    target="_blank"
+                    class="button button-dark">
+
+                    ابدأ مشروعك
+
+                    <span>↗</span>
+
+                </a>
+
+                <a
+                    href="#work"
+                    class="text-link">
+
+                    شاهد أعمالنا
+                    <span>↓</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- VISUAL -->
+
+        <div class="hero-visual reveal">
+
+            <div class="visual-label">
+                SELECTED WORK / 2026
+            </div>
+
+            <div class="hero-image">
+
+                <div class="image-overlay"></div>
+
+                <div class="hero-image-content">
+
+                    <small>
+                        CREATIVE
+                    </small>
+
+                    <strong>
+                        DIGITAL
+                        <br>
+                        EXPERIENCE
+                    </strong>
+
+                    <div class="circle-arrow">
+                        ↗
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="visual-caption">
+
+                <span>
+                    Design / Development
+                </span>
+
+                <span>
+                    01 — 04
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MARQUEE ================= -->
+
+<section class="marquee">
+
+    <div class="marquee-track">
+
+        <span>WEB DESIGN</span>
+        <i>✦</i>
+
+        <span>DEVELOPMENT</span>
+        <i>✦</i>
+
+        <span>BRANDING</span>
+        <i>✦</i>
+
+        <span>E-COMMERCE</span>
+        <i>✦</i>
+
+        <span>WEB DESIGN</span>
+        <i>✦</i>
+
+        <span>DEVELOPMENT</span>
+        <i>✦</i>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <div class="section-intro reveal">
+
+            <div>
+
+                <span class="section-number">
+                    01 / SERVICES
+                </span>
+
+                <h2>
+
+                    ماذا يمكننا
+                    <br>
+
+                    <em>أن نقدم لك؟</em>
+
+                </h2>
+
+            </div>
+
+            <p>
+
+                من الفكرة الأولى إلى إطلاق الموقع،
+                نهتم بكل التفاصيل لصناعة تجربة
+                رقمية متكاملة.
+
+            </p>
+
+        </div>
+
+
+        <div class="services-list">
+
+            <article class="service reveal">
+
+                <div class="service-number">
+                    01
+                </div>
+
+                <div class="service-main">
+
+                    <h3>
+                        تصميم المواقع
+                    </h3>
+
+                    <p>
+                        تصميم بصري مميز يعبر عن
+                        شخصية علامتك التجارية.
+                    </p>
+
+                </div>
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+            </article>
+
+
+            <article class="service reveal">
+
+                <div class="service-number">
+                    02
+                </div>
+
+                <div class="service-main">
+
+                    <h3>
+                        تطوير الويب
+                    </h3>
+
+                    <p>
+                        مواقع سريعة ومتجاوبة
+                        ومبنية لتعمل بكفاءة.
+                    </p>
+
+                </div>
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+            </article>
+
+
+            <article class="service reveal">
+
+                <div class="service-number">
+                    03
+                </div>
+
+                <div class="service-main">
+
+                    <h3>
+                        المتاجر الإلكترونية
+                    </h3>
+
+                    <p>
+                        تجربة تسوق سهلة تساعدك
+                        على تحويل الزوار إلى عملاء.
+                    </p>
+
+                </div>
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+            </article>
+
+
+            <article class="service reveal">
+
+                <div class="service-number">
+                    04
+                </div>
+
+                <div class="service-main">
+
+                    <h3>
+                        تطوير المواقع القديمة
+                    </h3>
+
+                    <p>
+                        نحول موقعك القديم إلى
+                        تجربة حديثة وسريعة.
+                    </p>
+
+                </div>
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WORK ================= -->
+
+<section class="section work" id="work">
+
+    <div class="container">
+
+        <div class="work-header reveal">
+
+            <div>
+
+                <span class="section-number">
+                    02 / SELECTED WORK
+                </span>
+
+                <h2>
+                    أعمالنا
+                </h2>
+
+            </div>
+
+            <p>
+                مجموعة من الأفكار والمشاريع
+                التي تعكس أسلوبنا في التصميم.
+            </p>
+
+        </div>
+
+
+        <div class="work-grid">
+
+            <article class="work-item large reveal">
+
+                <div class="work-image image-one">
+
+                    <div class="mockup">
+
+                        <div class="mockup-top"></div>
+
+                        <div class="mockup-title">
+                            STUDIO
+                        </div>
+
+                        <div class="mockup-line"></div>
+
+                        <div class="mockup-line small"></div>
+
+                        <div class="mockup-boxes">
+
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+
+                        <small>
+                            DIGITAL AGENCY
+                        </small>
+
+                        <h3>
+                            Creative Studio
+                        </h3>
+
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="work-item reveal">
+
+                <div class="work-image image-two">
+
+                    <div class="store-card">
+
+                        <small>
+                            NEW COLLECTION
+                        </small>
+
+                        <strong>
+                            STORE
+                        </strong>
+
+                        <div class="store-products">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+
+                        <small>
+                            E-COMMERCE
+                        </small>
+
+                        <h3>
+                            Modern Store
+                        </h3>
+
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="work-item reveal">
+
+                <div class="work-image image-three">
+
+                    <div class="portfolio-card">
+
+                        <span>
+                            2026
+                        </span>
+
+                        <strong>
+                            PORTFOLIO
+                        </strong>
+
+                        <div class="portfolio-circle"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+
+                        <small>
+                            PERSONAL BRAND
+                        </small>
+
+                        <h3>
+                            Creative Portfolio
+                        </h3>
+
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-title reveal">
+
+            <span class="section-number">
+                03 / ABOUT
+            </span>
+
+            <h2>
+
+                أقل،
+                <br>
+
+                <em>لكن أفضل.</em>
+
+            </h2>
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+            <p class="big-text">
+
+                نحن نؤمن أن الموقع الجيد
+                لا يحتاج إلى أن يكون مزدحماً
+                حتى يكون مؤثراً.
+
+            </p>
+
+            <p>
+
+                نركز على الفكرة، التصميم،
+                السرعة وتجربة المستخدم.
+                كل عنصر له سبب، وكل تفصيلة
+                لها هدف.
+
+            </p>
+
+            <div class="about-list">
+
+                <div>
+                    <span>01</span>
+                    <strong>فكرة واضحة</strong>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <strong>تصميم مميز</strong>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <strong>تنفيذ احترافي</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat reveal">
+
+            <strong>
+                50<span>+</span>
+            </strong>
+
+            <p>
+                مشروع وفكرة
+            </p>
+
+        </div>
+
+        <div class="stat reveal">
+
+            <strong>
+                100<span>%</span>
+            </strong>
+
+            <p>
+                تصميم متجاوب
+            </p>
+
+        </div>
+
+        <div class="stat reveal">
+
+            <strong>
+                24<span>/7</span>
+            </strong>
+
+            <p>
+                تواصل ودعم
+            </p>
+
+        </div>
+
+        <div class="stat reveal">
+
+            <strong>
+                ∞
+            </strong>
+
+            <p>
+                إمكانية للتطوير
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <div class="contact-left">
+
+                <span class="section-number">
+                    04 / LET'S TALK
+                </span>
+
+                <h2>
+
+                    عندك فكرة؟
+                    <br>
+
+                    <em>خلينا نبنيها.</em>
+
+                </h2>
+
+                <p>
+
+                    احكيلنا عن مشروعك،
+                    وخلينا نبدأ من أول خطوة.
+
+                </p>
+
+                <a
+                    href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20بدء%20مشروع%20موقع"
+                    target="_blank"
+                    class="button button-light">
+
+                    تحدث معنا على WhatsApp
+
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-art">
+
+                <div class="art-circle circle-one"></div>
+
+                <div class="art-circle circle-two"></div>
+
+                <div class="art-center">
+                    MO
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-top">
+
+        <div>
 
             <a href="#home" class="logo">
                 MO<span>WEB</span>
             </a>
 
-            <nav class="nav-links" id="navLinks">
-                <a href="#home">الرئيسية</a>
-                <a href="#services">خدماتنا</a>
-                <a href="#work">أعمالنا</a>
-                <a href="#about">من نحن</a>
-                <a href="#contact">تواصل معنا</a>
-            </nav>
+            <p>
+                Digital experiences
+                made with intention.
+            </p>
 
-            <a
-                href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20الاستفسار%20عن%20خدماتكم"
-                target="_blank"
-                class="nav-button"
-            >
-                ابدأ مشروعك
+        </div>
+
+
+        <div class="footer-nav">
+
+            <a href="#home">
+                الرئيسية
             </a>
 
-            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
-                ☰
-            </button>
+            <a href="#services">
+                الخدمات
+            </a>
+
+            <a href="#work">
+                الأعمال
+            </a>
+
+            <a href="#contact">
+                تواصل
+            </a>
 
         </div>
 
-    </header>
 
+        <a
+            href="https://wa.me/201061801844"
+            target="_blank"
+            class="footer-whatsapp">
 
-    <main>
+            WhatsApp ↗
 
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero" id="home">
+        </a>
 
-            <div class="hero-glow glow-one"></div>
-            <div class="hero-glow glow-two"></div>
+    </div>
 
-            <div class="container hero-content">
 
-                <div class="hero-text reveal">
+    <div class="container footer-bottom">
 
-                    <div class="badge">
-                        <span class="badge-dot"></span>
-                        نصمم أفكارك بشكل مختلف
-                    </div>
+        <span>
+            © 2026 MOWEB
+        </span>
 
-                    <h1>
-                        موقعك هو
-                        <span>واجهة نجاحك</span>
-                    </h1>
+        <span>
+            All rights reserved.
+        </span>
 
-                    <p>
-                        في MOWEB بنصمم ونطور مواقع ويب عصرية،
-                        سريعة ومتجاوبة مع جميع الأجهزة تساعد مشروعك
-                        يظهر بشكل احترافي ويكبر أونلاين.
-                    </p>
+    </div>
 
-                    <div class="hero-buttons">
+</footer>
 
-                        <a
-                            href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20إنشاء%20موقع"
-                            target="_blank"
-                            class="primary-btn"
-                        >
-                            ابدأ مشروعك الآن
-                            <span>←</span>
-                        </a>
 
-                        <a href="#work" class="secondary-btn">
-                            شاهد أعمالنا
-                        </a>
+<!-- ================= WHATSAPP ================= -->
 
-                    </div>
+<a
+    class="whatsapp"
+    href="https://wa.me/201061801844?text=مرحباً%20MOWEB"
+    target="_blank"
+    aria-label="WhatsApp">
 
-                    <div class="hero-trust">
-                        <div class="trust-item">
-                            <strong>100%</strong>
-                            <span>تصميم متجاوب</span>
-                        </div>
+    <span>◉</span>
 
-                        <div class="trust-item">
-                            <strong>24/7</strong>
-                            <span>متاحين للتواصل</span>
-                        </div>
+    <div>
+        تواصل معنا
+    </div>
 
-                        <div class="trust-item">
-                            <strong>+50</strong>
-                            <span>فكرة قابلة للتنفيذ</span>
-                        </div>
-                    </div>
+</a>
 
-                </div>
 
-
-                <div class="hero-visual reveal">
-
-                    <div class="visual-card">
-
-                        <div class="window-top">
-                            <div class="window-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <div class="window-title">
-                                MOWEB
-                            </div>
-                        </div>
-
-                        <div class="dashboard">
-
-                            <div class="dashboard-header">
-                                <div>
-                                    <small>مرحباً بك في</small>
-                                    <h3>MOWEB</h3>
-                                </div>
-
-                                <div class="mini-avatar">
-                                    M
-                                </div>
-                            </div>
-
-                            <div class="chart">
-
-                                <div class="chart-info">
-                                    <span>نمو المشروع</span>
-                                    <strong>+84%</strong>
-                                </div>
-
-                                <div class="bars">
-                                    <i style="height:35%"></i>
-                                    <i style="height:48%"></i>
-                                    <i style="height:42%"></i>
-                                    <i style="height:65%"></i>
-                                    <i style="height:58%"></i>
-                                    <i style="height:80%"></i>
-                                    <i style="height:95%"></i>
-                                </div>
-
-                            </div>
-
-                            <div class="mini-cards">
-
-                                <div>
-                                    <span>سرعة</span>
-                                    <strong>98%</strong>
-                                </div>
-
-                                <div>
-                                    <span>أداء</span>
-                                    <strong>99%</strong>
-                                </div>
-
-                                <div>
-                                    <span>جودة</span>
-                                    <strong>100%</strong>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="floating-card floating-one">
-                        ⚡
-                        <div>
-                            <strong>أداء سريع</strong>
-                            <small>تجربة مستخدم أفضل</small>
-                        </div>
-                    </div>
-
-                    <div class="floating-card floating-two">
-                        ✓
-                        <div>
-                            <strong>متجاوب</strong>
-                            <small>كل الأجهزة</small>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SERVICES
-        ========================== -->
-        <section class="section services" id="services">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <span>ماذا نقدم؟</span>
-
-                    <h2>
-                        كل ما يحتاجه
-                        <strong>مشروعك الرقمي</strong>
-                    </h2>
-
-                    <p>
-                        بنحول فكرتك لموقع احترافي يليق بعلامتك التجارية
-                        ويقدم تجربة ممتازة لعملائك.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-                    <article class="service-card reveal">
-
-                        <div class="service-icon">◈</div>
-
-                        <h3>تصميم المواقع</h3>
-
-                        <p>
-                            تصميم عصري ومميز يعكس هوية مشروعك
-                            ويجعل موقعك مختلف عن المنافسين.
-                        </p>
-
-                        <a href="#contact">اعرف المزيد ←</a>
-
-                    </article>
-
-
-                    <article class="service-card featured reveal">
-
-                        <div class="service-icon">⚡</div>
-
-                        <h3>تطوير المواقع</h3>
-
-                        <p>
-                            برمجة مواقع سريعة وقوية باستخدام
-                            تقنيات الويب الحديثة.
-                        </p>
-
-                        <a href="#contact">اعرف المزيد ←</a>
-
-                    </article>
-
-
-                    <article class="service-card reveal">
-
-                        <div class="service-icon">▣</div>
-
-                        <h3>متاجر إلكترونية</h3>
-
-                        <p>
-                            متجر إلكتروني احترافي لعرض منتجاتك
-                            وتحويل الزوار إلى عملاء.
-                        </p>
-
-                        <a href="#contact">اعرف المزيد ←</a>
-
-                    </article>
-
-
-                    <article class="service-card reveal">
-
-                        <div class="service-icon">✦</div>
-
-                        <h3>تحسين وتجديد</h3>
-
-                        <p>
-                            عندك موقع قديم؟ نقدر نعيد تصميمه
-                            ونخليه عصري وسريع.
-                        </p>
-
-                        <a href="#contact">اعرف المزيد ←</a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             WORK
-        ========================== -->
-        <section class="section work" id="work">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <span>أعمالنا</span>
-
-                    <h2>
-                        مشاريع مصممة
-                        <strong>لتترك انطباعاً</strong>
-                    </h2>
-
-                    <p>
-                        كل مشروع بنبدأه من الصفر حسب احتياجات العميل
-                        وأهدافه.
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <article class="project-card project-one reveal">
-
-                        <div class="project-image">
-                            <div class="project-screen">
-                                <span>MOWEB</span>
-                                <h3>Digital Agency</h3>
-                                <div class="screen-line"></div>
-                                <div class="screen-line short"></div>
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-                            <div>
-                                <small>Web Design</small>
-                                <h3>موقع شركة رقمية</h3>
-                            </div>
-
-                            <span class="project-arrow">↗</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-two reveal">
-
-                        <div class="project-image">
-                            <div class="project-screen store-screen">
-                                <span>STORE</span>
-                                <h3>Shop Online</h3>
-
-                                <div class="products-preview">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-                            <div>
-                                <small>E-Commerce</small>
-                                <h3>متجر إلكتروني</h3>
-                            </div>
-
-                            <span class="project-arrow">↗</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-three reveal">
-
-                        <div class="project-image">
-                            <div class="project-screen portfolio-screen">
-                                <span>PORTFOLIO</span>
-                                <h3>Creative Studio</h3>
-
-                                <div class="circle-design"></div>
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-                            <div>
-                                <small>Portfolio</small>
-                                <h3>موقع أعمال شخصي</h3>
-                            </div>
-
-                            <span class="project-arrow">↗</span>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-        <section class="section about" id="about">
-
-            <div class="container about-grid">
-
-                <div class="about-visual reveal">
-
-                    <div class="about-box">
-
-                        <div class="about-logo">
-                            MO<span>WEB</span>
-                        </div>
-
-                        <div class="about-circle"></div>
-
-                        <div class="about-small-card">
-                            <strong>+100%</strong>
-                            <span>شغف بالتفاصيل</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-text reveal">
-
-                    <span class="section-label">من نحن؟</span>
-
-                    <h2>
-                        مش بس بنعمل موقع...
-                        <strong>بنصنع تجربة.</strong>
-                    </h2>
-
-                    <p>
-                        MOWEB هو استوديو متخصص في تصميم وتطوير
-                        مواقع الويب الحديثة. هدفنا إننا نحول الأفكار
-                        إلى تجارب رقمية سهلة، سريعة ومميزة.
-                    </p>
-
-                    <p>
-                        نهتم بالتفاصيل الصغيرة من أول التصميم
-                        لحد سرعة الموقع وتجربة المستخدم.
-                    </p>
-
-                    <div class="about-points">
-
-                        <div>
-                            <span>✓</span>
-                            <p>تصميم احترافي وفريد</p>
-                        </div>
-
-                        <div>
-                            <span>✓</span>
-                            <p>متوافق مع الموبايل</p>
-                        </div>
-
-                        <div>
-                            <span>✓</span>
-                            <p>سرعة وأداء ممتاز</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             STATS
-        ========================== -->
-        <section class="stats-section">
-
-            <div class="container stats-grid">
-
-                <div class="stat reveal">
-                    <strong>50<span>+</span></strong>
-                    <p>فكرة ومشروع</p>
-                </div>
-
-                <div class="stat reveal">
-                    <strong>100<span>%</span></strong>
-                    <p>تصميم متجاوب</p>
-                </div>
-
-                <div class="stat reveal">
-                    <strong>24<span>/7</span></strong>
-                    <p>دعم وتواصل</p>
-                </div>
-
-                <div class="stat reveal">
-                    <strong>∞</strong>
-                    <p>إمكانيات التطوير</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TESTIMONIALS
-        ========================== -->
-        <section class="section testimonials">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <span>آراء العملاء</span>
-
-                    <h2>
-                        تجربة العميل
-                        <strong>أهم حاجة عندنا</strong>
-                    </h2>
-
-                </div>
-
-
-                <div class="testimonial-grid">
-
-                    <article class="testimonial reveal">
-
-                        <div class="stars">★★★★★</div>
-
-                        <p>
-                            "التصميم طلع أحسن بكتير من اللي كنت متخيله،
-                            والموقع سريع جدًا على الموبايل."
-                        </p>
-
-                        <div class="client">
-                            <div class="client-avatar">A</div>
-                            <div>
-                                <strong>أحمد</strong>
-                                <span>صاحب مشروع</span>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <article class="testimonial reveal">
-
-                        <div class="stars">★★★★★</div>
-
-                        <p>
-                            "التعامل كان سهل جدًا والنتيجة احترافية.
-                            الموقع فعلاً غير شكل البراند."
-                        </p>
-
-                        <div class="client">
-                            <div class="client-avatar">M</div>
-                            <div>
-                                <strong>محمد</strong>
-                                <span>رائد أعمال</span>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <article class="testimonial reveal">
-
-                        <div class="stars">★★★★★</div>
-
-                        <p>
-                            "أكتر حاجة عجبتني الاهتمام بالتفاصيل
-                            والسرعة في تنفيذ التعديلات."
-                        </p>
-
-                        <div class="client">
-                            <div class="client-avatar">S</div>
-                            <div>
-                                <strong>سارة</strong>
-                                <span>مصممة</span>
-                            </div>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-        <section class="section contact" id="contact">
-
-            <div class="container">
-
-                <div class="contact-box reveal">
-
-                    <div class="contact-text">
-
-                        <span>جاهز نبدأ؟</span>
-
-                        <h2>
-                            عندك فكرة؟
-                            <strong>خلينا نحولها لموقع.</strong>
-                        </h2>
-
-                        <p>
-                            ابعتلنا فكرتك على واتساب وخلينا نتكلم
-                            عن المشروع ونشوف أفضل طريقة لتنفيذه.
-                        </p>
-
-                        <a
-                            href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20عندي%20فكرة%20موقع%20وأريد%20التحدث%20عنها"
-                            target="_blank"
-                            class="primary-btn"
-                        >
-                            تواصل معنا على واتساب
-                            <span>↗</span>
-                        </a>
-
-                    </div>
-
-
-                    <div class="contact-decoration">
-
-                        <div class="contact-ring ring-one"></div>
-                        <div class="contact-ring ring-two"></div>
-
-                        <div class="contact-center">
-                            MO<span>WEB</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer>
-
-        <div class="container footer-content">
-
-            <div class="footer-brand">
-
-                <a href="#home" class="logo">
-                    MO<span>WEB</span>
-                </a>
-
-                <p>
-                    نصنع مواقع ويب تساعد أفكارك تكبر.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">الرئيسية</a>
-                <a href="#services">الخدمات</a>
-                <a href="#work">أعمالنا</a>
-                <a href="#about">من نحن</a>
-                <a href="#contact">تواصل</a>
-
-            </div>
-
-
-            <div class="footer-bottom">
-
-                <span>
-                    © 2026 MOWEB. جميع الحقوق محفوظة.
-                </span>
-
-                <span>
-                    صُنع بشغف ♥
-                </span>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-    <!-- =========================
-         WHATSAPP BUTTON
-    ========================== -->
-
-    <a
-        href="https://wa.me/201061801844?text=مرحباً%20MOWEB،%20أريد%20الاستفسار%20عن%20خدماتكم"
-        target="_blank"
-        class="whatsapp"
-        aria-label="تواصل معنا عبر واتساب"
-    >
-        <span class="whatsapp-icon">◉</span>
-        <span class="whatsapp-tooltip">تواصل معنا</span>
-    </a>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
