@@ -1,528 +1,179 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MOWEB | Digital Agency</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOWEB — منصة الألعاب</title>
+  <meta name="description" content="واجهة ألعاب عربية عصرية مستوحاة من التصميم الذي اخترته.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="loader" id="loader">
-        <div class="loader-logo">MO<span>WEB</span></div>
+  <header class="topbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="MOWEB">
+        <span>MO</span><b>WEB</b>
+      </a>
+
+      <nav class="main-nav">
+        <a class="active" href="#home">الرئيسية</a>
+        <a href="#games">الألعاب</a>
+        <a href="#today">حل المشاكل</a>
+        <a href="#games">اليوم</a>
+        <a href="#devices">الأكثر تحميلاً</a>
+        <a href="#games">جهازي</a>
+        <a href="#news">المودات</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="بحث" id="searchToggle">⌕</button>
+        <button class="icon-btn" aria-label="المفضلة">♡</button>
+        <button class="icon-btn notify" aria-label="الإشعارات">♧<i>2</i></button>
+        <button class="account-btn">حسابي <span>♙</span></button>
+      </div>
     </div>
-
-    <header class="header">
-
-        <a href="#home" class="logo">
-            MO<span>WEB</span>
-        </a>
-
-        <nav class="nav" id="nav">
-            <a href="#home">الرئيسية</a>
-            <a href="#services">خدماتنا</a>
-            <a href="#work">أعمالنا</a>
-            <a href="#about">من نحن</a>
-            <a href="#contact">تواصل معنا</a>
-        </nav>
-
-        <a href="#contact" class="header-btn">
-            ابدأ مشروعك <b>↗</b>
-        </a>
-
-        <button class="menu" id="menu">☰</button>
-
-    </header>
-
-
-    <main>
-
-        <!-- HERO -->
-
-        <section class="hero" id="home">
-
-            <div class="hero-glow"></div>
-
-            <div class="hero-content">
-
-                <div class="eyebrow">
-                    <span></span>
-                    DIGITAL CREATIVE STUDIO
-                </div>
-
-                <h1>
-                    نخلق مواقع
-                    <strong>تستحق أن تُرى.</strong>
-                </h1>
-
-                <p>
-                    MOWEB وكالة رقمية نصمم ونطور مواقع استثنائية
-                    تساعد الشركات والعلامات التجارية على الظهور بشكل أقوى.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a href="#work" class="btn primary">
-                        شاهد أعمالنا
-                        <span>↗</span>
-                    </a>
-
-                    <a href="#contact" class="btn outline">
-                        تحدث معنا
-                    </a>
-
-                </div>
-
-                <div class="hero-stats">
-
-                    <div>
-                        <strong>35+</strong>
-                        <span>مشروع</span>
-                    </div>
-
-                    <div>
-                        <strong>18+</strong>
-                        <span>عميل</span>
-                    </div>
-
-                    <div>
-                        <strong>5</strong>
-                        <span>سنوات خبرة</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-art">
-
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-
-                <div class="art-card">
-
-                    <div class="art-top">
-                        <span>MOWEB®</span>
-                        <span>2026</span>
-                    </div>
-
-                    <div class="art-center">
-                        <div class="orb"></div>
-                    </div>
-
-                    <div class="art-bottom">
-                        <small>DIGITAL</small>
-                        <b>EXPERIENCE</b>
-                    </div>
-
-                </div>
-
-                <div class="floating-tag">
-                    <small>CREATIVE</small>
-                    <b>THINK<br>DIFFERENT.</b>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- MARQUEE -->
-
-        <section class="marquee">
-
-            <div class="marquee-track">
-                <span>WEB DESIGN ✦</span>
-                <span>DEVELOPMENT ✦</span>
-                <span>BRANDING ✦</span>
-                <span>UI / UX ✦</span>
-                <span>E-COMMERCE ✦</span>
-                <span>WEB DESIGN ✦</span>
-                <span>DEVELOPMENT ✦</span>
-                <span>BRANDING ✦</span>
-            </div>
-
-        </section>
-
-
-        <!-- INTRO -->
-
-        <section class="section intro">
-
-            <div class="label">01 — WHO WE ARE</div>
-
-            <div class="intro-content">
-
-                <h2>
-                    موقعك هو أول
-                    <span>انطباع.</span>
-                </h2>
-
-                <p>
-                    لذلك لا نصمم مواقع عادية.
-                    نركز على التفاصيل الصغيرة والكبيرة
-                    لصناعة تجربة تجعل الزائر يتذكر علامتك التجارية.
-                </p>
-
-                <a href="#services" class="text-link">
-                    اكتشف خدماتنا ↗
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- SERVICES -->
-
-        <section class="section services" id="services">
-
-            <div class="section-title">
-
-                <div class="label">02 — WHAT WE DO</div>
-
-                <h2>
-                    خدماتنا
-                    <span>الأساسية.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="services-grid">
-
-                <article class="service">
-
-                    <div class="service-number">01</div>
-
-                    <div class="service-icon">✦</div>
-
-                    <h3>Web Design</h3>
-
-                    <p>
-                        تصميم مواقع حديثة ومميزة
-                        تعكس شخصية علامتك التجارية.
-                    </p>
-
-                    <div class="arrow">↗</div>
-
-                </article>
-
-
-                <article class="service service-featured">
-
-                    <div class="service-number">02</div>
-
-                    <div class="service-icon">◈</div>
-
-                    <h3>Development</h3>
-
-                    <p>
-                        تطوير مواقع سريعة ومتجاوبة
-                        تعمل بشكل ممتاز على جميع الأجهزة.
-                    </p>
-
-                    <div class="arrow">↗</div>
-
-                </article>
-
-
-                <article class="service">
-
-                    <div class="service-number">03</div>
-
-                    <div class="service-icon">◎</div>
-
-                    <h3>Branding</h3>
-
-                    <p>
-                        بناء هوية بصرية تجعل البراند
-                        مختلفًا وسهل التذكر.
-                    </p>
-
-                    <div class="arrow">↗</div>
-
-                </article>
-
-
-                <article class="service">
-
-                    <div class="service-number">04</div>
-
-                    <div class="service-icon">▣</div>
-
-                    <h3>E-Commerce</h3>
-
-                    <p>
-                        متاجر إلكترونية مصممة
-                        لتقديم تجربة شراء احترافية.
-                    </p>
-
-                    <div class="arrow">↗</div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- WORK -->
-
-        <section class="section work" id="work">
-
-            <div class="section-title work-title">
-
-                <div class="label">03 — SELECTED WORK</div>
-
-                <h2>
-                    أعمالنا
-                    <span>المميزة.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects">
-
-                <article class="project project-big">
-
-                    <div class="project-image image-one">
-
-                        <div class="project-info">
-                            <small>01 / BRAND EXPERIENCE</small>
-                            <h3>NOVA</h3>
-                            <span>↗</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <div class="project-image image-two">
-
-                        <div class="project-info">
-                            <small>02 / E-COMMERCE</small>
-                            <h3>AURA</h3>
-                            <span>↗</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project">
-
-                    <div class="project-image image-three">
-
-                        <div class="project-info">
-                            <small>03 / DIGITAL PRODUCT</small>
-                            <h3>VISION</h3>
-                            <span>↗</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project project-big">
-
-                    <div class="project-image image-four">
-
-                        <div class="project-info">
-                            <small>04 / CREATIVE STUDIO</small>
-                            <h3>MONO</h3>
-                            <span>↗</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- NUMBERS -->
-
-        <section class="numbers">
-
-            <div class="number-item">
-                <strong data-count="35">0</strong>
-                <span>مشروع مكتمل</span>
-            </div>
-
-            <div class="number-item">
-                <strong data-count="18">0</strong>
-                <span>عميل سعيد</span>
-            </div>
-
-            <div class="number-item">
-                <strong data-count="5">0</strong>
-                <span>سنوات خبرة</span>
-            </div>
-
-            <div class="number-item">
-                <strong data-count="100">0</strong>
-                <span>% شغف</span>
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-
-        <section class="section about" id="about">
-
-            <div class="label">04 — WHY MOWEB</div>
-
-            <div class="about-grid">
-
-                <h2>
-                    الجمال
-                    <br>
-                    <span>يحتاج وظيفة.</span>
-                </h2>
-
-                <div class="about-text">
-
-                    <p>
-                        التصميم الجميل وحده لا يكفي.
-                        الموقع الناجح يجب أن يكون سريعًا،
-                        واضحًا، وسهل الاستخدام.
-                    </p>
-
-                    <p>
-                        لذلك نجمع بين التصميم والتكنولوجيا
-                        وفهم المستخدم لنقدم تجربة رقمية متكاملة.
-                    </p>
-
-                    <div class="about-line"></div>
-
-                    <small>
-                        THINK — DESIGN — BUILD
-                    </small>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- TESTIMONIAL -->
-
-        <section class="section testimonial">
-
-            <div class="quote">“</div>
-
-            <blockquote>
-                موقع مختلف تمامًا عن أي شيء
-                كنا نتوقعه. تجربة احترافية من
-                أول تصميم لحد الإطلاق.
-            </blockquote>
-
-            <div class="client">
-
-                <div class="avatar">M</div>
-
-                <div>
-                    <b>Mohamed Ali</b>
-                    <span>Founder — NOVA</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-
-        <section class="section contact" id="contact">
-
-            <div class="contact-glow"></div>
-
-            <div class="label">05 — START A PROJECT</div>
-
-            <h2>
-                جاهز تخلي
-                <span>الناس تلاحظك؟</span>
-            </h2>
-
-            <p>
-                احكيلنا عن فكرتك ونبدأ نبنيها معًا.
-            </p>
-
-            <a
-                href="https://wa.me/201061801844"
-                target="_blank"
-                class="contact-button"
-            >
-                تواصل معنا عبر WhatsApp
-                <b>↗</b>
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <div class="footer-main">
-
-            <div class="footer-logo">
-                MO<span>WEB</span>
-            </div>
-
-            <p>
-                Digital experiences<br>
-                made with purpose.
-            </p>
-
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <input id="searchInput" type="search" placeholder="ابحث عن لعبة أو تصنيف...">
+    <button id="searchBtn">بحث</button>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+
+        <div class="hero-copy">
+          <div class="eyebrow">PC GAMING • MOWEB</div>
+          <h1>ماذا تريد أن تلعب اليوم؟</h1>
+          <p>اكتشف ألعابًا جديدة، وتابع أحدث الإصدارات، وابحث عن لعبتك المفضلة من واجهة سريعة وأنيقة.</p>
+
+          <form class="hero-search" id="heroSearch">
+            <input id="heroInput" type="text" placeholder="ابحث عن لعبة، سلسلة أو تصنيف...">
+            <button>بحث</button>
+            <span class="magnify">⌕</span>
+          </form>
+
+          <div class="chips">
+            <button>استكشف الأنواع</button>
+            <button>ألعاب حسب الحجم</button>
+            <button>حسب قوة الجهاز</button>
+            <button class="green">ألعاب تدعم العربية</button>
+            <button>فردي / جماعي</button>
+            <button class="blue">اقترح لي لعبة</button>
+          </div>
         </div>
 
-        <div class="footer-bottom">
+        <article class="featured">
+          <div class="featured-image" style="background-image:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85')"></div>
+          <div class="featured-overlay"></div>
+          <span class="live-badge">رائجة الآن <i></i></span>
+          <div class="featured-info">
+            <small>عالم مفتوح • قيادة وسيارات</small>
+            <h2>Forza Horizon</h2>
+            <div class="feature-meta"><span>★★★★★ 5.3</span><span>عرض اللعبة ←</span></div>
+          </div>
+        </article>
 
-            <span>© 2026 MOWEB</span>
+      </div>
+    </section>
 
-            <div>
-                <a href="#home">Instagram</a>
-                <a href="#home">Facebook</a>
-                <a href="https://wa.me/201061801844" target="_blank">WhatsApp</a>
-            </div>
-
+    <section class="section" id="games">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">الأكثر نشاطًا</span>
+          <h2>الأكثر تحميلاً الآن</h2>
         </div>
+        <div class="tabs">
+          <button>الشهر</button>
+          <button>الأسبوع</button>
+          <button class="selected">24 ساعة</button>
+        </div>
+      </div>
 
-    </footer>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card" data-name="Forza Horizon 5">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85')"></div>
+          <span class="tag new">جديد</span>
+          <span class="tag arabic">عربي</span>
+          <div class="game-info"><h3>Forza Horizon 5</h3><p>سباقات • عالم مفتوح</p></div>
+        </article>
 
+        <article class="game-card" data-name="Cyberpunk 2077">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?auto=format&fit=crop&w=1000&q=85')"></div>
+          <span class="tag arabic">عربي</span>
+          <div class="game-info"><h3>Cyberpunk 2077</h3><p>أكشن • RPG</p></div>
+        </article>
 
-    <a
-        href="https://wa.me/201061801844"
-        target="_blank"
-        class="whatsapp"
-    >
-        WhatsApp ↗
-    </a>
+        <article class="game-card" data-name="Spider Man">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=1000&q=85')"></div>
+          <span class="tag">مميز</span>
+          <div class="game-info"><h3>Spider-Man</h3><p>أكشن • مغامرات</p></div>
+        </article>
 
+        <article class="game-card" data-name="God of War">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=85')"></div>
+          <span class="tag new">جديد</span>
+          <div class="game-info"><h3>God of War</h3><p>مغامرات • قصة</p></div>
+        </article>
 
-    <script src="script.js"></script>
+        <article class="game-card" data-name="Elden Ring">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=85')"></div>
+          <span class="tag arabic">عربي</span>
+          <div class="game-info"><h3>Elden Ring</h3><p>RPG • عالم مفتوح</p></div>
+        </article>
 
+        <article class="game-card" data-name="Red Dead Redemption">
+          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1000&q=85')"></div>
+          <div class="game-info"><h3>Red Dead Redemption</h3><p>مغامرات • عالم مفتوح</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner" id="devices">
+      <div>
+        <span class="section-kicker">اختيارك يبدأ هنا</span>
+        <h2>اعرف الألعاب المناسبة لجهازك</h2>
+        <p>واجهة بسيطة تساعدك على اكتشاف الألعاب المناسبة لإمكانيات جهازك بسرعة.</p>
+      </div>
+      <button class="primary" onclick="alert('سيتم إضافة فحص مواصفات الجهاز في النسخة القادمة!')">افحص جهازي الآن ↗</button>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">آخر الأخبار</span>
+          <h2>كل جديد في عالم الألعاب</h2>
+        </div>
+        <a href="#" class="all-link">عرض الكل ←</a>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=900&q=85')"></div>
+          <div><span>أخبار</span><h3>أفضل ألعاب هذا الأسبوع التي تستحق التجربة</h3><p>تحديثات وإصدارات جديدة في مكان واحد.</p></div>
+        </article>
+        <article class="news-card">
+          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=85')"></div>
+          <div><span>دليل</span><h3>كيف تختار اللعبة المناسبة لجهازك؟</h3><p>نصائح سريعة قبل التحميل والشراء.</p></div>
+        </article>
+        <article class="news-card">
+          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=900&q=85')"></div>
+          <div><span>مجتمع</span><h3>ألعاب جماعية لقضاء وقت ممتع مع أصدقائك</h3><p>اختيارات متنوعة لكل أنواع اللاعبين.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">MO<span>WEB</span></div>
+    <p>© 2026 MOWEB — تصميم وتجربة ألعاب عصرية.</p>
+    <div class="footer-links"><a href="#">سياسة الخصوصية</a><a href="#">تواصل معنا</a><a href="#">من نحن</a></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
