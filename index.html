@@ -14,6 +14,7 @@
 
   <header class="topbar">
     <div class="nav-wrap">
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
       <a class="brand" href="#home" aria-label="MOWEB">
         <span>MO</span><b>WEB</b>
       </a>
@@ -21,10 +22,10 @@
       <nav class="main-nav">
         <a class="active" href="#home">الرئيسية</a>
         <a href="#games">الألعاب</a>
-        <a href="#today">حل المشاكل</a>
+        <a href="#devices">حل المشاكل</a>
         <a href="#games">اليوم</a>
         <a href="#devices">الأكثر تحميلاً</a>
-        <a href="#games">جهازي</a>
+        <a href="#devices">جهازي</a>
         <a href="#news">المودات</a>
       </nav>
 
@@ -32,7 +33,7 @@
         <button class="icon-btn" aria-label="بحث" id="searchToggle">⌕</button>
         <button class="icon-btn" aria-label="المفضلة">♡</button>
         <button class="icon-btn notify" aria-label="الإشعارات">♧<i>2</i></button>
-        <button class="account-btn">حسابي <span>♙</span></button>
+        <button class="account-btn" id="accountBtn">حسابي <span>♙</span></button>
       </div>
     </div>
   </header>
@@ -59,12 +60,12 @@
           </form>
 
           <div class="chips">
-            <button>استكشف الأنواع</button>
-            <button>ألعاب حسب الحجم</button>
-            <button>حسب قوة الجهاز</button>
-            <button class="green">ألعاب تدعم العربية</button>
-            <button>فردي / جماعي</button>
-            <button class="blue">اقترح لي لعبة</button>
+            <button data-filter="all">كل الألعاب</button>
+            <button data-filter="سباقات">سباقات</button>
+            <button data-filter="RPG">RPG</button>
+            <button class="green" data-filter="عربي">ألعاب تدعم العربية</button>
+            <button data-filter="مغامرات">مغامرات</button>
+            <button class="blue" data-filter="أكشن">أكشن</button>
           </div>
         </div>
 
@@ -89,45 +90,46 @@
           <h2>الأكثر تحميلاً الآن</h2>
         </div>
         <div class="tabs">
-          <button>الشهر</button>
-          <button>الأسبوع</button>
-          <button class="selected">24 ساعة</button>
+          <button data-sort="month">الشهر</button>
+          <button data-sort="week">الأسبوع</button>
+          <button class="selected" data-sort="day">24 ساعة</button>
         </div>
+        <span class="result-message" id="resultMessage"></span>
       </div>
 
       <div class="game-grid" id="gameGrid">
-        <article class="game-card" data-name="Forza Horizon 5">
+        <article class="game-card" data-name="Forza Horizon 5" data-category="سباقات عالم مفتوح" data-day="100" data-week="80" data-month="70" data-description="سباقات عالم مفتوح وتجربة قيادة مليئة بالتحديات والفعاليات."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85')"></div>
           <span class="tag new">جديد</span>
           <span class="tag arabic">عربي</span>
           <div class="game-info"><h3>Forza Horizon 5</h3><p>سباقات • عالم مفتوح</p></div>
         </article>
 
-        <article class="game-card" data-name="Cyberpunk 2077">
+        <article class="game-card" data-name="Cyberpunk 2077" data-category="RPG أكشن" data-day="90" data-week="95" data-month="88" data-description="عالم مستقبلي مفتوح يجمع الأكشن وتقمص الأدوار."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?auto=format&fit=crop&w=1000&q=85')"></div>
           <span class="tag arabic">عربي</span>
           <div class="game-info"><h3>Cyberpunk 2077</h3><p>أكشن • RPG</p></div>
         </article>
 
-        <article class="game-card" data-name="Spider Man">
+        <article class="game-card" data-name="Spider Man" data-category="أكشن مغامرات" data-day="85" data-week="82" data-month="90" data-description="مغامرة أكشن سريعة في مدينة مفتوحة مليئة بالمهام."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=1000&q=85')"></div>
           <span class="tag">مميز</span>
           <div class="game-info"><h3>Spider-Man</h3><p>أكشن • مغامرات</p></div>
         </article>
 
-        <article class="game-card" data-name="God of War">
+        <article class="game-card" data-name="God of War" data-category="مغامرات قصة" data-day="80" data-week="78" data-month="84" data-description="رحلة ملحمية تجمع القتال والاستكشاف والقصة."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=85')"></div>
           <span class="tag new">جديد</span>
           <div class="game-info"><h3>God of War</h3><p>مغامرات • قصة</p></div>
         </article>
 
-        <article class="game-card" data-name="Elden Ring">
+        <article class="game-card" data-name="Elden Ring" data-category="RPG عالم مفتوح" data-day="92" data-week="90" data-month="93" data-description="عالم ضخم للاستكشاف ومعارك زعماء وتطوير للشخصية."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=85')"></div>
           <span class="tag arabic">عربي</span>
           <div class="game-info"><h3>Elden Ring</h3><p>RPG • عالم مفتوح</p></div>
         </article>
 
-        <article class="game-card" data-name="Red Dead Redemption">
+        <article class="game-card" data-name="Red Dead Redemption" data-category="مغامرات عالم مفتوح" data-day="76" data-week="74" data-month="86" data-description="تجربة عالم مفتوح وقصة غربية مليئة بالمغامرات."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
           <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1000&q=85')"></div>
           <div class="game-info"><h3>Red Dead Redemption</h3><p>مغامرات • عالم مفتوح</p></div>
         </article>
@@ -138,9 +140,9 @@
       <div>
         <span class="section-kicker">اختيارك يبدأ هنا</span>
         <h2>اعرف الألعاب المناسبة لجهازك</h2>
-        <p>واجهة بسيطة تساعدك على اكتشاف الألعاب المناسبة لإمكانيات جهازك بسرعة.</p>
+        <p>واجهة بسيطة تساعدك على اكتشاف الألعاب المناسبة لإمكانيات جهازك بسرعة.</p><div class="device-result" id="deviceResult">اضغط على الزر لفحص معلومات جهازك المتاحة للمتصفح.</div>
       </div>
-      <button class="primary" onclick="alert('سيتم إضافة فحص مواصفات الجهاز في النسخة القادمة!')">افحص جهازي الآن ↗</button>
+      <button class="primary" id="deviceCheck">افحص جهازي الآن ↗</button>
     </section>
 
     <section class="section news-section" id="news">
@@ -149,7 +151,7 @@
           <span class="section-kicker">آخر الأخبار</span>
           <h2>كل جديد في عالم الألعاب</h2>
         </div>
-        <a href="#" class="all-link">عرض الكل ←</a>
+        <a href="#games" class="all-link">عرض كل الألعاب ←</a>
       </div>
       <div class="news-grid">
         <article class="news-card">
@@ -167,6 +169,40 @@
       </div>
     </section>
   </main>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy">
+        <span class="section-kicker">تواصل معنا</span>
+        <h2>عندك سؤال أو اقتراح؟</h2>
+        <p>ابعت رسالتك من النموذج، أو تواصل معنا مباشرة عبر واتساب.</p>
+        <a class="whatsapp-btn" href="https://wa.me/201061801844" target="_blank" rel="noopener">تواصل عبر WhatsApp ↗</a>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input required name="name" placeholder="اسمك" />
+        <input required type="email" name="email" placeholder="البريد الإلكتروني" />
+        <textarea required name="message" rows="5" placeholder="اكتب رسالتك..."></textarea>
+        <button class="primary" type="submit">إرسال الرسالة</button>
+        <p id="contactMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <div class="modal" id="gameModal" aria-hidden="true">
+      <div class="modal-box game-modal-box">
+        <button class="modal-close" data-close-modal>×</button>
+        <div class="modal-image" id="modalImage"></div>
+        <div class="modal-body"><span class="section-kicker" id="modalCategory"></span><h2 id="modalTitle"></h2><p id="modalText"></p><a class="primary modal-action" href="#contact">اطلب اللعبة / اسأل عنها ↗</a></div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal">
+      <div class="modal-box small-modal">
+        <button class="modal-close" data-close-account>×</button>
+        <span class="section-kicker">MOWEB ACCOUNT</span>
+        <h2>حسابي</h2>
+        <p>تقدر تستخدم المفضلة الآن مباشرة من الموقع. تسجيل الدخول يمكن ربطه لاحقًا بقاعدة بيانات.</p>
+        <a class="primary" href="#games" data-close-account>مشاهدة المفضلة والألعاب ↗</a>
+      </div>
+    </div>
 
   <footer>
     <div class="footer-brand">MO<span>WEB</span></div>
