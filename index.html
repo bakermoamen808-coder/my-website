@@ -1,215 +1,1367 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOWEB — منصة الألعاب</title>
-  <meta name="description" content="واجهة ألعاب عربية عصرية مستوحاة من التصميم الذي اخترته.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MoWeb — Websites That Get You Clients</title>
+
+    <meta
+        name="description"
+        content="MoWeb creates premium websites, landing pages and digital experiences for businesses and creators."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050a0f"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header class="topbar">
-    <div class="nav-wrap">
-      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
-      <a class="brand" href="#home" aria-label="MOWEB">
-        <span>MO</span><b>WEB</b>
-      </a>
+<!-- ======================================
+     LOADER
+====================================== -->
 
-      <nav class="main-nav">
-        <a class="active" href="#home">الرئيسية</a>
-        <a href="#games">الألعاب</a>
-        <a href="#devices">حل المشاكل</a>
-        <a href="#games">اليوم</a>
-        <a href="#devices">الأكثر تحميلاً</a>
-        <a href="#devices">جهازي</a>
-        <a href="#news">المودات</a>
-      </nav>
+<div class="loader" id="loader">
+    <div class="loader-logo">M<span>W</span></div>
+    <div class="loader-line"></div>
+</div>
 
-      <div class="nav-actions">
-        <button class="icon-btn" aria-label="بحث" id="searchToggle">⌕</button>
-        <button class="icon-btn" aria-label="المفضلة">♡</button>
-        <button class="icon-btn notify" aria-label="الإشعارات">♧<i>2</i></button>
-        <button class="account-btn" id="accountBtn">حسابي <span>♙</span></button>
-      </div>
-    </div>
-  </header>
 
-  <div class="search-panel" id="searchPanel">
-    <input id="searchInput" type="search" placeholder="ابحث عن لعبة أو تصنيف...">
-    <button id="searchBtn">بحث</button>
-  </div>
+<!-- ======================================
+     BACKGROUND
+====================================== -->
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
+<div class="background">
 
-        <div class="hero-copy">
-          <div class="eyebrow">PC GAMING • MOWEB</div>
-          <h1>ماذا تريد أن تلعب اليوم؟</h1>
-          <p>اكتشف ألعابًا جديدة، وتابع أحدث الإصدارات، وابحث عن لعبتك المفضلة من واجهة سريعة وأنيقة.</p>
+    <div class="grid"></div>
 
-          <form class="hero-search" id="heroSearch">
-            <input id="heroInput" type="text" placeholder="ابحث عن لعبة، سلسلة أو تصنيف...">
-            <button>بحث</button>
-            <span class="magnify">⌕</span>
-          </form>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
 
-          <div class="chips">
-            <button data-filter="all">كل الألعاب</button>
-            <button data-filter="سباقات">سباقات</button>
-            <button data-filter="RPG">RPG</button>
-            <button class="green" data-filter="عربي">ألعاب تدعم العربية</button>
-            <button data-filter="مغامرات">مغامرات</button>
-            <button class="blue" data-filter="أكشن">أكشن</button>
-          </div>
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+
+    <div class="noise"></div>
+
+</div>
+
+
+<!-- ======================================
+     NAVIGATION
+====================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+
+        <div class="logo-mark">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <article class="featured">
-          <div class="featured-image" style="background-image:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85')"></div>
-          <div class="featured-overlay"></div>
-          <span class="live-badge">رائجة الآن <i></i></span>
-          <div class="featured-info">
-            <small>عالم مفتوح • قيادة وسيارات</small>
-            <h2>Forza Horizon</h2>
-            <div class="feature-meta"><span>★★★★★ 5.3</span><span>عرض اللعبة ←</span></div>
-          </div>
-        </article>
+        <div class="logo-text">
+            Mo<span>Web</span>
+        </div>
 
-      </div>
-    </section>
+    </a>
 
-    <section class="section" id="games">
-      <div class="section-head">
+
+    <nav class="nav-links">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <a
+        href="mailto:moamenbaker684@gmail.com?subject=I%20want%20a%20website"
+        class="nav-cta"
+    >
+        Start a Project
+        <span>↗</span>
+    </a>
+
+
+    <button class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<!-- ======================================
+     MOBILE MENU
+====================================== -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+
+    <a
+        href="mailto:moamenbaker684@gmail.com?subject=I%20want%20a%20website"
+        class="mobile-cta"
+    >
+        Start a Project ↗
+    </a>
+
+</div>
+
+
+<main>
+
+<!-- ======================================
+     HERO
+====================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="availability">
+
+            <span></span>
+
+            AVAILABLE FOR NEW PROJECTS
+
+        </div>
+
+
+        <h1>
+
+            Websites that
+            <span>look expensive.</span>
+
+            <strong>
+                And work even
+                <em>better.</em>
+            </strong>
+
+        </h1>
+
+
+        <p class="hero-text">
+
+            MoWeb creates premium websites and digital
+            experiences designed to make your business
+            look professional, build trust and turn visitors
+            into customers.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+                Build My Website
+                <span>↗</span>
+            </a>
+
+            <a
+                href="#work"
+                class="btn btn-secondary"
+            >
+                See My Work
+                <span>↓</span>
+            </a>
+
+        </div>
+
+
+        <div class="trust-row">
+
+            <div class="trust-item">
+                <strong>Premium</strong>
+                <span>Design</span>
+            </div>
+
+            <div class="trust-item">
+                <strong>Fast</strong>
+                <span>Development</span>
+            </div>
+
+            <div class="trust-item">
+                <strong>Mobile</strong>
+                <span>First</span>
+            </div>
+
+            <div class="trust-item">
+                <strong>SEO</strong>
+                <span>Ready</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual">
+
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+
+
+        <div class="hero-browser">
+
+            <div class="browser-top">
+
+                <div class="browser-dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <div class="browser-url">
+                    moweb.studio
+                </div>
+
+            </div>
+
+
+            <div class="browser-content">
+
+                <div class="browser-small">
+                    MOWEB / DIGITAL STUDIO
+                </div>
+
+                <div class="browser-title">
+                    Your business
+                    <br>
+                    <span>deserves better.</span>
+                </div>
+
+                <div class="browser-lines">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <div class="browser-button">
+                    LET'S WORK TOGETHER ↗
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-ui ui-top">
+
+            <span class="mini-icon">✦</span>
+
+            <div>
+                <b>Premium UI</b>
+                <small>Designed for trust</small>
+            </div>
+
+        </div>
+
+
+        <div class="floating-ui ui-bottom">
+
+            <div class="chart">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div>
+                <b>+48%</b>
+                <small>Engagement</small>
+            </div>
+
+        </div>
+
+
+        <div class="hero-badge">
+            <span>MW</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     MARQUEE
+====================================== -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>WEB DESIGN</span>
+        <b>✦</b>
+        <span>DEVELOPMENT</span>
+        <b>✦</b>
+        <span>UI / UX</span>
+        <b>✦</b>
+        <span>LANDING PAGES</span>
+        <b>✦</b>
+        <span>BRANDING</span>
+        <b>✦</b>
+        <span>WEB DESIGN</span>
+        <b>✦</b>
+        <span>DEVELOPMENT</span>
+        <b>✦</b>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================
+     SERVICES
+====================================== -->
+
+<section class="section" id="services">
+
+    <div class="section-head">
+
         <div>
-          <span class="section-kicker">الأكثر نشاطًا</span>
-          <h2>الأكثر تحميلاً الآن</h2>
+
+            <div class="eyebrow">
+                01 / SERVICES
+            </div>
+
+            <h2>
+                Everything your
+                <br>
+                <span>business needs.</span>
+            </h2>
+
         </div>
-        <div class="tabs">
-          <button data-sort="month">الشهر</button>
-          <button data-sort="week">الأسبوع</button>
-          <button class="selected" data-sort="day">24 ساعة</button>
+
+        <p>
+            I don't just build pages. I create complete
+            digital experiences that make your brand
+            easier to trust and easier to choose.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <article class="service-card featured">
+
+            <div class="service-number">
+                01
+            </div>
+
+            <div class="service-icon">
+                ◇
+            </div>
+
+            <h3>
+                Business Websites
+            </h3>
+
+            <p>
+                Professional websites for companies,
+                agencies, stores and personal brands.
+            </p>
+
+            <ul>
+                <li>Premium UI</li>
+                <li>Responsive Design</li>
+                <li>SEO Foundation</li>
+                <li>Fast Performance</li>
+            </ul>
+
+            <a href="#contact">
+                Get Started →
+            </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+            <div class="service-number">
+                02
+            </div>
+
+            <div class="service-icon">
+                &lt;/&gt;
+            </div>
+
+            <h3>
+                Landing Pages
+            </h3>
+
+            <p>
+                High-converting landing pages designed
+                around one clear business goal.
+            </p>
+
+            <ul>
+                <li>Strong CTA</li>
+                <li>Conversion Focused</li>
+                <li>Mobile Optimized</li>
+                <li>Lead Capture</li>
+            </ul>
+
+            <a href="#contact">
+                Get Started →
+            </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+            <div class="service-number">
+                03
+            </div>
+
+            <div class="service-icon">
+                ✦
+            </div>
+
+            <h3>
+                UI / UX Design
+            </h3>
+
+            <p>
+                Clean interfaces and thoughtful user
+                experiences for digital products.
+            </p>
+
+            <ul>
+                <li>Modern Interface</li>
+                <li>User Experience</li>
+                <li>Design System</li>
+                <li>Interactive Elements</li>
+            </ul>
+
+            <a href="#contact">
+                Get Started →
+            </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+            <div class="service-number">
+                04
+            </div>
+
+            <div class="service-icon">
+                ◎
+            </div>
+
+            <h3>
+                Website Redesign
+            </h3>
+
+            <p>
+                Turn an outdated website into a modern
+                experience that represents your brand.
+            </p>
+
+            <ul>
+                <li>Visual Upgrade</li>
+                <li>Better UX</li>
+                <li>Mobile Experience</li>
+                <li>Modern Sections</li>
+            </ul>
+
+            <a href="#contact">
+                Get Started →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     ABOUT / VALUE
+====================================== -->
+
+<section class="section about-section">
+
+    <div class="about-visual">
+
+        <div class="about-image-main">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+                alt="Modern creative workspace"
+            >
+
         </div>
-        <span class="result-message" id="resultMessage"></span>
-      </div>
 
-      <div class="game-grid" id="gameGrid">
-        <article class="game-card" data-name="Forza Horizon 5" data-category="سباقات عالم مفتوح" data-day="100" data-week="80" data-month="70" data-description="سباقات عالم مفتوح وتجربة قيادة مليئة بالتحديات والفعاليات."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85')"></div>
-          <span class="tag new">جديد</span>
-          <span class="tag arabic">عربي</span>
-          <div class="game-info"><h3>Forza Horizon 5</h3><p>سباقات • عالم مفتوح</p></div>
-        </article>
+        <div class="experience-card">
 
-        <article class="game-card" data-name="Cyberpunk 2077" data-category="RPG أكشن" data-day="90" data-week="95" data-month="88" data-description="عالم مستقبلي مفتوح يجمع الأكشن وتقمص الأدوار."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?auto=format&fit=crop&w=1000&q=85')"></div>
-          <span class="tag arabic">عربي</span>
-          <div class="game-info"><h3>Cyberpunk 2077</h3><p>أكشن • RPG</p></div>
-        </article>
+            <strong>MoWeb</strong>
 
-        <article class="game-card" data-name="Spider Man" data-category="أكشن مغامرات" data-day="85" data-week="82" data-month="90" data-description="مغامرة أكشن سريعة في مدينة مفتوحة مليئة بالمهام."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=1000&q=85')"></div>
-          <span class="tag">مميز</span>
-          <div class="game-info"><h3>Spider-Man</h3><p>أكشن • مغامرات</p></div>
-        </article>
+            <span>
+                Digital experiences
+                made with intention.
+            </span>
 
-        <article class="game-card" data-name="God of War" data-category="مغامرات قصة" data-day="80" data-week="78" data-month="84" data-description="رحلة ملحمية تجمع القتال والاستكشاف والقصة."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=85')"></div>
-          <span class="tag new">جديد</span>
-          <div class="game-info"><h3>God of War</h3><p>مغامرات • قصة</p></div>
-        </article>
+        </div>
 
-        <article class="game-card" data-name="Elden Ring" data-category="RPG عالم مفتوح" data-day="92" data-week="90" data-month="93" data-description="عالم ضخم للاستكشاف ومعارك زعماء وتطوير للشخصية."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=85')"></div>
-          <span class="tag arabic">عربي</span>
-          <div class="game-info"><h3>Elden Ring</h3><p>RPG • عالم مفتوح</p></div>
-        </article>
+        <div class="round-label">
+            <span>CREATIVE</span>
+            <span>•</span>
+            <span>DIGITAL</span>
+            <span>•</span>
+            <span>WEB</span>
+        </div>
 
-        <article class="game-card" data-name="Red Dead Redemption" data-category="مغامرات عالم مفتوح" data-day="76" data-week="74" data-month="86" data-description="تجربة عالم مفتوح وقصة غربية مليئة بالمغامرات."><button class="favorite-btn" aria-label="إضافة للمفضلة">♡</button>>
-          <div class="game-image" style="background-image:url('https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1000&q=85')"></div>
-          <div class="game-info"><h3>Red Dead Redemption</h3><p>مغامرات • عالم مفتوح</p></div>
-        </article>
-      </div>
-    </section>
+    </div>
 
-    <section class="banner" id="devices">
-      <div>
-        <span class="section-kicker">اختيارك يبدأ هنا</span>
-        <h2>اعرف الألعاب المناسبة لجهازك</h2>
-        <p>واجهة بسيطة تساعدك على اكتشاف الألعاب المناسبة لإمكانيات جهازك بسرعة.</p><div class="device-result" id="deviceResult">اضغط على الزر لفحص معلومات جهازك المتاحة للمتصفح.</div>
-      </div>
-      <button class="primary" id="deviceCheck">افحص جهازي الآن ↗</button>
-    </section>
 
-    <section class="section news-section" id="news">
-      <div class="section-head">
+    <div class="about-content">
+
+        <div class="eyebrow">
+            02 / WHY MOWEB
+        </div>
+
+        <h2>
+            Your website is
+            <span>your salesperson</span>
+            online.
+        </h2>
+
+        <p>
+            People decide whether they trust a business
+            in seconds. That's why every MoWeb project
+            is designed around clarity, credibility and
+            conversion — not just decoration.
+        </p>
+
+
+        <div class="benefits">
+
+            <div class="benefit">
+
+                <span>01</span>
+
+                <div>
+                    <h3>First impression</h3>
+                    <p>
+                        A premium visual identity that
+                        makes your business memorable.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span>02</span>
+
+                <div>
+                    <h3>Built to convert</h3>
+                    <p>
+                        Clear calls-to-action guide visitors
+                        toward contacting or buying.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span>03</span>
+
+                <div>
+                    <h3>Ready for growth</h3>
+                    <p>
+                        Responsive structure that can grow
+                        with your business.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     WORK
+====================================== -->
+
+<section class="section work-section" id="work">
+
+    <div class="section-head">
+
         <div>
-          <span class="section-kicker">آخر الأخبار</span>
-          <h2>كل جديد في عالم الألعاب</h2>
+
+            <div class="eyebrow">
+                03 / SELECTED WORK
+            </div>
+
+            <h2>
+                Work that
+                <br>
+                <span>speaks first.</span>
+            </h2>
+
         </div>
-        <a href="#games" class="all-link">عرض كل الألعاب ←</a>
-      </div>
-      <div class="news-grid">
-        <article class="news-card">
-          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=900&q=85')"></div>
-          <div><span>أخبار</span><h3>أفضل ألعاب هذا الأسبوع التي تستحق التجربة</h3><p>تحديثات وإصدارات جديدة في مكان واحد.</p></div>
-        </article>
-        <article class="news-card">
-          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=85')"></div>
-          <div><span>دليل</span><h3>كيف تختار اللعبة المناسبة لجهازك؟</h3><p>نصائح سريعة قبل التحميل والشراء.</p></div>
-        </article>
-        <article class="news-card">
-          <div class="news-thumb" style="background-image:url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=900&q=85')"></div>
-          <div><span>مجتمع</span><h3>ألعاب جماعية لقضاء وقت ممتع مع أصدقائك</h3><p>اختيارات متنوعة لكل أنواع اللاعبين.</p></div>
-        </article>
-      </div>
-    </section>
-  </main>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-copy">
-        <span class="section-kicker">تواصل معنا</span>
-        <h2>عندك سؤال أو اقتراح؟</h2>
-        <p>ابعت رسالتك من النموذج، أو تواصل معنا مباشرة عبر واتساب.</p>
-        <a class="whatsapp-btn" href="https://wa.me/201061801844" target="_blank" rel="noopener">تواصل عبر WhatsApp ↗</a>
-      </div>
-      <form class="contact-form" id="contactForm">
-        <input required name="name" placeholder="اسمك" />
-        <input required type="email" name="email" placeholder="البريد الإلكتروني" />
-        <textarea required name="message" rows="5" placeholder="اكتب رسالتك..."></textarea>
-        <button class="primary" type="submit">إرسال الرسالة</button>
-        <p id="contactMessage" class="form-message"></p>
-      </form>
-    </section>
+        <a href="#contact" class="text-link">
+            Have a project?
+            <span>Let's talk ↗</span>
+        </a>
 
-    <div class="modal" id="gameModal" aria-hidden="true">
-      <div class="modal-box game-modal-box">
-        <button class="modal-close" data-close-modal>×</button>
-        <div class="modal-image" id="modalImage"></div>
-        <div class="modal-body"><span class="section-kicker" id="modalCategory"></span><h2 id="modalTitle"></h2><p id="modalText"></p><a class="primary modal-action" href="#contact">اطلب اللعبة / اسأل عنها ↗</a></div>
-      </div>
     </div>
 
-    <div class="modal" id="accountModal">
-      <div class="modal-box small-modal">
-        <button class="modal-close" data-close-account>×</button>
-        <span class="section-kicker">MOWEB ACCOUNT</span>
-        <h2>حسابي</h2>
-        <p>تقدر تستخدم المفضلة الآن مباشرة من الموقع. تسجيل الدخول يمكن ربطه لاحقًا بقاعدة بيانات.</p>
-        <a class="primary" href="#games" data-close-account>مشاهدة المفضلة والألعاب ↗</a>
-      </div>
+
+    <div class="projects">
+
+
+        <article class="project project-large">
+
+            <a href="#contact">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1600&q=85"
+                        alt="Creative agency website"
+                    >
+
+                    <div class="project-hover">
+                        Build something like this ↗
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div>
+                        <small>01 / AGENCY WEBSITE</small>
+                        <h3>Creative Agency</h3>
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </a>
+
+        </article>
+
+
+        <article class="project">
+
+            <a href="#contact">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+                        alt="Business dashboard"
+                    >
+
+                    <div class="project-hover">
+                        Build something like this ↗
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div>
+                        <small>02 / BUSINESS</small>
+                        <h3>Business Dashboard</h3>
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </a>
+
+        </article>
+
+
+        <article class="project">
+
+            <a href="#contact">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=85"
+                        alt="Mobile interface"
+                    >
+
+                    <div class="project-hover">
+                        Build something like this ↗
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <div>
+                        <small>03 / UI DESIGN</small>
+                        <h3>Digital Product</h3>
+                    </div>
+
+                    <span>↗</span>
+
+                </div>
+
+            </a>
+
+        </article>
+
     </div>
 
-  <footer>
-    <div class="footer-brand">MO<span>WEB</span></div>
-    <p>© 2026 MOWEB — تصميم وتجربة ألعاب عصرية.</p>
-    <div class="footer-links"><a href="#">سياسة الخصوصية</a><a href="#">تواصل معنا</a><a href="#">من نحن</a></div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+
+<!-- ======================================
+     PROCESS
+====================================== -->
+
+<section class="section process-section" id="process">
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                04 / PROCESS
+            </div>
+
+            <h2>
+                Simple process.
+                <br>
+                <span>Serious results.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-step">
+
+            <span>01</span>
+
+            <div class="process-icon">
+                ◎
+            </div>
+
+            <h3>
+                Discover
+            </h3>
+
+            <p>
+                We understand your business,
+                audience and goals.
+            </p>
+
+        </div>
+
+
+        <div class="process-line"></div>
+
+
+        <div class="process-step">
+
+            <span>02</span>
+
+            <div class="process-icon">
+                ◇
+            </div>
+
+            <h3>
+                Design
+            </h3>
+
+            <p>
+                Your idea becomes a polished,
+                premium interface.
+            </p>
+
+        </div>
+
+
+        <div class="process-line"></div>
+
+
+        <div class="process-step">
+
+            <span>03</span>
+
+            <div class="process-icon">
+                &lt;/&gt;
+            </div>
+
+            <h3>
+                Build
+            </h3>
+
+            <p>
+                Clean responsive code brings
+                the design to life.
+            </p>
+
+        </div>
+
+
+        <div class="process-line"></div>
+
+
+        <div class="process-step">
+
+            <span>04</span>
+
+            <div class="process-icon">
+                ↗
+            </div>
+
+            <h3>
+                Launch
+            </h3>
+
+            <p>
+                We polish everything and get
+                your website ready for customers.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     PRICING
+====================================== -->
+
+<section class="section pricing-section" id="pricing">
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                05 / PACKAGES
+            </div>
+
+            <h2>
+                Choose your
+                <br>
+                <span>starting point.</span>
+            </h2>
+
+        </div>
+
+        <p>
+            Every project is different. These packages
+            give you a clear starting point.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-grid">
+
+
+        <article class="price-card">
+
+            <div class="price-top">
+                <span>STARTER</span>
+                <b>01</b>
+            </div>
+
+            <h3>
+                Landing Page
+            </h3>
+
+            <p>
+                Perfect for a personal brand,
+                product or campaign.
+            </p>
+
+            <div class="price">
+                <small>Starting from</small>
+                <strong>$150</strong>
+            </div>
+
+            <ul>
+                <li>✓ One premium page</li>
+                <li>✓ Responsive design</li>
+                <li>✓ Contact CTA</li>
+                <li>✓ Basic SEO structure</li>
+            </ul>
+
+            <a href="#contact">
+                Choose Starter →
+            </a>
+
+        </article>
+
+
+        <article class="price-card popular">
+
+            <div class="popular-badge">
+                MOST POPULAR
+            </div>
+
+            <div class="price-top">
+                <span>BUSINESS</span>
+                <b>02</b>
+            </div>
+
+            <h3>
+                Business Website
+            </h3>
+
+            <p>
+                A complete website designed to
+                make your business look established.
+            </p>
+
+            <div class="price">
+                <small>Starting from</small>
+                <strong>$350</strong>
+            </div>
+
+            <ul>
+                <li>✓ Up to 6 pages</li>
+                <li>✓ Premium UI</li>
+                <li>✓ Mobile responsive</li>
+                <li>✓ Contact system</li>
+                <li>✓ SEO foundation</li>
+            </ul>
+
+            <a href="#contact">
+                Choose Business →
+            </a>
+
+        </article>
+
+
+        <article class="price-card">
+
+            <div class="price-top">
+                <span>PREMIUM</span>
+                <b>03</b>
+            </div>
+
+            <h3>
+                Custom Experience
+            </h3>
+
+            <p>
+                For brands that need something
+                completely custom.
+            </p>
+
+            <div class="price">
+                <small>Starting from</small>
+                <strong>$700</strong>
+            </div>
+
+            <ul>
+                <li>✓ Custom architecture</li>
+                <li>✓ Advanced interactions</li>
+                <li>✓ Premium UI/UX</li>
+                <li>✓ Custom features</li>
+                <li>✓ Priority support</li>
+            </ul>
+
+            <a href="#contact">
+                Discuss Premium →
+            </a>
+
+        </article>
+
+    </div>
+
+    <p class="pricing-note">
+        * Prices are starting points and may change depending on project requirements.
+    </p>
+
+</section>
+
+
+<!-- ======================================
+     TESTIMONIALS
+====================================== -->
+
+<section class="section testimonials">
+
+    <div class="eyebrow">
+        06 / CLIENT EXPERIENCE
+    </div>
+
+    <div class="testimonial-box">
+
+        <div class="quote">
+            “
+        </div>
+
+        <p>
+            Your next great testimonial can live here.
+            After completing projects, replace this text
+            with real feedback from your clients.
+        </p>
+
+        <div class="testimonial-author">
+
+            <div class="author-avatar">
+                M
+            </div>
+
+            <div>
+                <strong>
+                    Your Future Client
+                </strong>
+
+                <span>
+                    Business Owner
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     FAQ
+====================================== -->
+
+<section class="section faq-section">
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                07 / FAQ
+            </div>
+
+            <h2>
+                Questions,
+                <br>
+                <span>answered.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-list">
+
+
+        <details open>
+
+            <summary>
+                How long does a website take?
+                <span>+</span>
+            </summary>
+
+            <p>
+                A simple landing page can usually be completed
+                much faster than a full business website.
+                The exact timeline depends on the number of pages,
+                content and features.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Can you redesign my existing website?
+                <span>+</span>
+            </summary>
+
+            <p>
+                Yes. I can redesign the visual interface,
+                improve the structure and create a more modern
+                experience around your existing business.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Will the website work on phones?
+                <span>+</span>
+            </summary>
+
+            <p>
+                Yes. MoWeb websites are designed to be responsive
+                across phones, tablets and desktop screens.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                How do I start a project?
+                <span>+</span>
+            </summary>
+
+            <p>
+                Click any Start a Project button and send the
+                project details through email. I'll use that
+                information to understand what you need.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+     CONTACT
+====================================== -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="contact-box">
+
+        <div class="contact-decoration">
+            MW
+        </div>
+
+
+        <div class="contact-content">
+
+            <div class="eyebrow">
+                08 / START A PROJECT
+            </div>
+
+            <h2>
+                Let's make your
+                <br>
+                website <span>matter.</span>
+            </h2>
+
+            <p>
+                Tell me what you're building and I'll get
+                back to you with the next steps.
+            </p>
+
+
+            <form id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    >
+
+                </div>
+
+
+                <select id="service" required>
+
+                    <option value="">
+                        What do you need?
+                    </option>
+
+                    <option>
+                        Business Website
+                    </option>
+
+                    <option>
+                        Landing Page
+                    </option>
+
+                    <option>
+                        UI / UX Design
+                    </option>
+
+                    <option>
+                        Website Redesign
+                    </option>
+
+                    <option>
+                        Custom Project
+                    </option>
+
+                </select>
+
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Tell me about your project..."
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="form-button"
+                >
+                    Send Project Request
+                    <span>↗</span>
+                </button>
+
+            </form>
+
+
+            <div class="contact-email">
+
+                <span>Or email directly</span>
+
+                <button id="copyEmail">
+                    moamenbaker684@gmail.com
+                    <b>Copy</b>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ======================================
+     FOOTER
+====================================== -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <a href="#home" class="footer-logo">
+
+            <div class="logo-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            Mo<span>Web</span>
+
+        </a>
+
+
+        <p>
+            Premium websites for ambitious businesses.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 MoWeb. All rights reserved.
+        </span>
+
+        <a href="mailto:moamenbaker684@gmail.com">
+            moamenbaker684@gmail.com
+        </a>
+
+        <a href="#home">
+            Back to top ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+<div class="toast" id="toast">
+    Email copied!
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
